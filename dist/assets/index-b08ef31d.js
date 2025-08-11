@@ -7601,7 +7601,7 @@ var __async = (__this, __arguments, generator) => {
   }
   const scriptRel = "modulepreload";
   const assetsURL = function(dep) {
-    return "/loopx-starter/" + dep;
+    return "/survey_website/" + dep;
   };
   const seen = {};
   const __vitePreload = function preload(baseModule, deps, importerUrl) {

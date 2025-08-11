@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/loopx-starter/', // GitHub Pages 路径
+  base: '/survey_website/', // GitHub Pages 路径
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
