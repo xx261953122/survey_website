@@ -1,0 +1,1347 @@
+export type Language = 'en' | 'zh' | 'fr' | 'de' | 'ko' | 'ja';
+
+export interface Translations {
+  // Navigation
+  nav: {
+    home: string;
+    solutions: string;
+    whyUs: string;
+    aiAnalysis: string;
+    contact: string;
+    resources: string;
+    joinPanel: string;
+    signIn: string;
+    panelBook: string;
+    esomar37: string;
+  };
+  
+  // Hero Section
+  hero: {
+    title: string;
+    subtitle: string;
+    description: string;
+    dashboard: {
+      online: string;
+      activeSurveys: string;
+      availableRespondents: string;
+      responseRate: string;
+      globalCoverage: string;
+      countries: string;
+      languages: string;
+      industries: string;
+      fraudDetection: string;
+      memberSatisfaction: string;
+      comingSoon: string;
+      aiAnalysis: string;
+      aiDescription: string;
+      createSurvey: string;
+      reports: string;
+      connected: string;
+      learnMore: string;
+    };
+  };
+  
+  // Features Section
+  features: {
+    title: string;
+    badge: string;
+    accuracyRate: string;
+    activeRespondents: string;
+    countriesCovered: string;
+    features: Array<{
+      icon: string;
+      title: string;
+      description: string;
+    }>;
+  };
+  
+  // Solutions Section
+  solutions: {
+    title: string;
+    subtitle: string;
+    completeCoverage: string;
+    servingIndustries: string;
+  };
+  
+  // Trust Quality Section
+  trustQuality: {
+    title: string;
+    subtitle: string;
+    ourValues: string;
+    features: Array<{
+      icon: string;
+      title: string;
+      description: string;
+      highlight: string;
+    }>;
+    values: Array<{
+      title: string;
+      description: string;
+    }>;
+  };
+  
+  // Contact Section
+  contact: {
+    title: string;
+    subtitle: string;
+    placeholder: string;
+    buttonText: string;
+    submitting: string;
+    thankYou: string;
+    receivedMessage: string;
+    submitAnother: string;
+  };
+  
+  // Footer
+  footer: {
+    description: string;
+    copyright: string;
+  };
+  
+  // AI Analysis Section
+  aiAnalysis: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    stats: {
+      accuracy: string;
+      accuracyDesc: string;
+      efficiency: string;
+      efficiencyDesc: string;
+      monitoring: string;
+      monitoringDesc: string;
+      languages: string;
+      languagesDesc: string;
+    };
+    qualityAnalysis: {
+      title: string;
+      description: string;
+      benefit1: string;
+      benefit2: string;
+      benefit3: string;
+    };
+    trendAnalysis: {
+      title: string;
+      description: string;
+      benefit1: string;
+      benefit2: string;
+      benefit3: string;
+    };
+    audienceMatching: {
+      title: string;
+      description: string;
+      benefit1: string;
+      benefit2: string;
+      benefit3: string;
+    };
+    sentimentAnalysis: {
+      title: string;
+      description: string;
+      benefit1: string;
+      benefit2: string;
+      benefit3: string;
+    };
+    predictiveInsights: {
+      title: string;
+      description: string;
+      benefit1: string;
+      benefit2: string;
+      benefit3: string;
+    };
+    quotaManagement: {
+      title: string;
+      description: string;
+      benefit1: string;
+      benefit2: string;
+      benefit3: string;
+    };
+    cta: {
+      title: string;
+      description: string;
+      demoButton: string;
+      contactButton: string;
+    };
+  };
+}
+
+export const translations: Record<Language, Translations> = {
+  en: {
+    nav: {
+      home: "Home",
+      solutions: "Solutions",
+      whyUs: "Why Us",
+      aiAnalysis: "AI Analysis",
+      contact: "Contact",
+      resources: "Resources",
+      joinPanel: "Join Our Panel",
+      signIn: "Sign In",
+      panelBook: "Panel Book",
+      esomar37: "ESOMAR 37"
+    },
+    hero: {
+      title: "High-Quality Global Survey Panel",
+      subtitle: "Scale your market research with diverse, verified respondents and seamless survey operations.",
+      description: "We deliver fast, reliable, and compliant survey distribution worldwide.",
+      dashboard: {
+        online: "Online",
+        activeSurveys: "Active Surveys",
+        availableRespondents: "Available Respondents",
+        responseRate: "Response Rate",
+        globalCoverage: "Global Coverage",
+        countries: "Countries",
+        languages: "Languages",
+        industries: "Industries",
+        fraudDetection: "Fraud Detection",
+        memberSatisfaction: "Member Satisfaction",
+        comingSoon: "Coming Soon",
+        aiAnalysis: "AI Analysis",
+        aiDescription: "Transform your survey data into actionable insights with our advanced AI analysis tools designed specifically for market research.",
+        createSurvey: "Create Survey",
+        reports: "Reports",
+        connected: "Connected",
+        learnMore: "Learn More"
+      }
+    },
+    features: {
+      title: "Why Trust Us",
+      badge: "Trusted by 100+ Companies",
+      accuracyRate: "Accuracy Rate",
+      activeRespondents: "Active Respondents",
+      countriesCovered: "Countries Covered",
+      features: [
+        {
+          icon: "lightning",
+          title: "Response Fast",
+          description: "Get qualified respondents in hours, not days. Our AI-powered matching system ensures rapid response times."
+        },
+        {
+          icon: "shield",
+          title: "Quality Assured",
+          description: "Rigorous quality control with double opt-in verification and fraud detection ensures reliable data."
+        },
+        {
+          icon: "target",
+          title: "Target Coverage",
+          description: "Precise demographic, professional, and behavioral targeting for your specific survey needs."
+        },
+        {
+          icon: "globe",
+          title: "Countries Coverage",
+          description: "Global reach across 30+ countries with localized respondent pools and multi-language support."
+        }
+      ]
+    },
+    solutions: {
+      title: "Industry-Specific Solutions",
+      subtitle: "Tailored research solutions for 20+ industries with specialized respondent pools",
+      completeCoverage: "Complete Industry Coverage",
+      servingIndustries: "Serving 20+ industries with specialized respondent pools"
+    },
+    trustQuality: {
+      title: "Trust & Quality",
+      subtitle: "Precise, fast and cost-effective. Our panel members are satisfied and motivated, delivering excellent response quality.",
+      ourValues: "Our Values",
+      features: [
+        {
+          icon: "check",
+          title: "Double Opt-in Verification",
+          description: "All members are verified through double opt-in process, ensuring genuine and engaged respondents.",
+          highlight: "60% referrals"
+        },
+        {
+          icon: "users",
+          title: "Highly Profiled Members",
+          description: "Detailed demographic, professional, and behavioral profiling for precise targeting.",
+          highlight: "0.3% fraud rate"
+        },
+        {
+          icon: "clock",
+          title: "Live Support",
+          description: "Round-the-clock support team to ensure smooth project execution and member satisfaction.",
+          highlight: "24/7 online"
+        },
+        {
+          icon: "heart",
+          title: "Member Satisfaction",
+          description: "Happy and engaged members provide better quality responses and higher completion rates.",
+          highlight: "98% satisfaction"
+        }
+      ],
+      values: [
+        {
+          title: "Value to Customers",
+          description: "Delivering exceptional research insights that drive business decisions with 95% accuracy rate and actionable recommendations"
+        },
+        {
+          title: "Fair Reward to Members",
+          description: "Ensuring our panel members are fairly compensated with competitive rates and transparent payment systems"
+        },
+        {
+          title: "Happy Employees",
+          description: "Building a team that's passionate about research and customer success with continuous learning and growth opportunities"
+        }
+      ]
+    },
+    contact: {
+      title: "Ready to Get Started?",
+      subtitle: "Join thousands of research teams who trust LoopX for their sample needs.",
+      placeholder: "Enter your email address",
+      buttonText: "Get Started",
+      submitting: "Submitting...",
+      thankYou: "Thank You!",
+      receivedMessage: "We've received your request and will be in touch soon.",
+      submitAnother: "Submit Another Request"
+    },
+    footer: {
+      description: "AI-driven sample distribution for modern research teams.",
+      copyright: "© 2025 LoopX. All rights reserved."
+    },
+    aiAnalysis: {
+      badge: "AI-Powered Insights",
+      title: "Intelligent Survey Analysis",
+      subtitle: "Transform your survey data into actionable insights with our advanced AI analysis tools designed specifically for market research.",
+      stats: {
+        accuracy: "Accuracy Rate",
+        accuracyDesc: "AI-powered quality detection",
+        efficiency: "Efficiency Gain",
+        efficiencyDesc: "Faster analysis turnaround",
+        monitoring: "Real-time Monitoring",
+        monitoringDesc: "Continuous quality assurance",
+        languages: "Languages Supported",
+        languagesDesc: "Multi-language analysis"
+      },
+      qualityAnalysis: {
+        title: "Smart Data Quality Analysis",
+        description: "Automatically detect and flag suspicious response patterns, ensuring data integrity and reliability.",
+        benefit1: "Real-time fraud detection and prevention",
+        benefit2: "Automated response pattern analysis",
+        benefit3: "Quality scoring for each respondent"
+      },
+      trendAnalysis: {
+        title: "Real-time Response Trends",
+        description: "Monitor survey completion rates and response quality in real-time with predictive analytics.",
+        benefit1: "Predict completion rates before launch",
+        benefit2: "Identify optimal survey timing",
+        benefit3: "Track response quality trends"
+      },
+      audienceMatching: {
+        title: "AI-Driven Audience Matching",
+        description: "Intelligent respondent selection based on demographic, behavioral, and contextual factors.",
+        benefit1: "Precision targeting with 95%+ accuracy",
+        benefit2: "Behavioral pattern recognition",
+        benefit3: "Dynamic quota optimization"
+      },
+      sentimentAnalysis: {
+        title: "Multi-language Sentiment Analysis",
+        description: "Analyze emotional responses and sentiment across multiple languages and cultures.",
+        benefit1: "Cross-cultural sentiment insights",
+        benefit2: "Emotional response tracking",
+        benefit3: "Cultural context understanding"
+      },
+      predictiveInsights: {
+        title: "Predictive Market Insights",
+        description: "Leverage historical data to predict market trends and consumer behavior patterns.",
+        benefit1: "Market trend forecasting",
+        benefit2: "Consumer behavior prediction",
+        benefit3: "Risk assessment and mitigation"
+      },
+      quotaManagement: {
+        title: "Intelligent Quota Management",
+        description: "Automatically balance sample distribution across different demographic segments.",
+        benefit1: "Real-time quota monitoring",
+        benefit2: "Automatic sample rebalancing",
+        benefit3: "Demographic representation optimization"
+      },
+      cta: {
+        title: "Ready to Experience AI-Powered Survey Analysis?",
+        description: "Join leading research teams who are already leveraging our AI capabilities to gain deeper insights faster.",
+        demoButton: "Request Demo",
+        contactButton: "Contact Sales"
+      }
+    }
+  },
+  zh: {
+    nav: {
+      home: "首页",
+      solutions: "解决方案",
+      whyUs: "为什么选择我们",
+      aiAnalysis: "AI分析",
+      contact: "联系我们",
+      resources: "资源",
+      joinPanel: "加入我们的面板",
+      signIn: "登录",
+      panelBook: "面板手册",
+      esomar37: "ESOMAR 37"
+    },
+    hero: {
+      title: "高质量全球调研面板",
+      subtitle: "通过多样化的验证受访者和无缝调研运营扩展您的市场研究。",
+      description: "我们在全球范围内提供快速、可靠和合规的调研分发服务。",
+      dashboard: {
+        online: "在线",
+        activeSurveys: "活跃调研",
+        availableRespondents: "可用受访者",
+        responseRate: "响应率",
+        globalCoverage: "全球覆盖",
+        countries: "国家",
+        languages: "语言",
+        industries: "行业",
+        fraudDetection: "欺诈检测",
+        memberSatisfaction: "成员满意度",
+        comingSoon: "即将推出",
+        aiAnalysis: "AI分析",
+        aiDescription: "通过专为市场研究设计的高级AI分析工具，将您的调研数据转化为可操作的洞察。",
+        createSurvey: "创建调研",
+        reports: "查看报告",
+        connected: "已连接",
+        learnMore: "了解更多"
+      }
+    },
+    features: {
+      title: "为什么信任我们",
+      badge: "100+ 公司信赖",
+      accuracyRate: "准确率",
+      activeRespondents: "活跃受访者",
+      countriesCovered: "覆盖国家",
+      features: [
+        {
+          icon: "lightning",
+          title: "快速响应",
+          description: "在数小时内获得合格受访者，而非数天。我们的AI驱动匹配系统确保快速响应时间。"
+        },
+        {
+          icon: "shield",
+          title: "质量保证",
+          description: "严格的质量控制，包括双重确认验证和欺诈检测，确保可靠数据。"
+        },
+        {
+          icon: "target",
+          title: "精准覆盖",
+          description: "精确的人口统计、专业和行为定位，满足您的特定调研需求。"
+        },
+        {
+          icon: "globe",
+          title: "国家覆盖",
+          description: "覆盖30多个国家的全球影响力，拥有本地化受访者池和多语言支持。"
+        }
+      ]
+    },
+    solutions: {
+      title: "行业特定解决方案",
+      subtitle: "为20多个行业量身定制的研究解决方案，拥有专业受访者池",
+      completeCoverage: "完整行业覆盖",
+      servingIndustries: "为20多个行业提供专业受访者池服务"
+    },
+    trustQuality: {
+      title: "信任与质量",
+      subtitle: "精确、快速且经济高效。我们的面板成员满意且积极，提供出色的响应质量。",
+      ourValues: "我们的价值观",
+      features: [
+        {
+          icon: "check",
+          title: "双重确认验证",
+          description: "所有成员都通过双重确认流程进行验证，确保真实和积极参与的受访者。",
+          highlight: "60% 推荐率"
+        },
+        {
+          icon: "users",
+          title: "高度档案化成员",
+          description: "详细的人口统计、专业和行为档案，实现精准定位。",
+          highlight: "0.3% 欺诈率"
+        },
+        {
+          icon: "clock",
+          title: "实时支持",
+          description: "全天候支持团队确保项目顺利执行和成员满意度。",
+          highlight: "24/7 在线"
+        },
+        {
+          icon: "heart",
+          title: "成员满意度",
+          description: "快乐和积极参与的成员提供更好的质量响应和更高的完成率。",
+          highlight: "98% 满意度"
+        }
+      ],
+      values: [
+        {
+          title: "为客户创造价值",
+          description: "提供卓越的研究洞察，以95%的准确率和可操作的建议推动商业决策"
+        },
+        {
+          title: "公平奖励成员",
+          description: "确保我们的面板成员通过竞争性费率和透明支付系统获得公平补偿"
+        },
+        {
+          title: "快乐的员工",
+          description: "建立一支对研究和客户成功充满热情，并拥有持续学习和成长机会的团队"
+        }
+      ]
+    },
+    contact: {
+      title: "准备开始了吗？",
+      subtitle: "加入数千个信任LoopX样本需求的研究团队。",
+      placeholder: "输入您的邮箱地址",
+      buttonText: "开始使用",
+      submitting: "提交中...",
+      thankYou: "谢谢！",
+      receivedMessage: "我们已收到您的请求，将很快与您联系。",
+      submitAnother: "提交另一个请求"
+    },
+    footer: {
+      description: "面向现代研究团队的AI驱动样本分发。",
+      copyright: "© 2025 LoopX. 保留所有权利。"
+    },
+    aiAnalysis: {
+      badge: "AI驱动洞察",
+      title: "智能调研分析",
+      subtitle: "通过专为市场研究设计的高级AI分析工具，将您的调研数据转化为可操作的洞察。",
+      stats: {
+        accuracy: "准确率",
+        accuracyDesc: "AI驱动的质量检测",
+        efficiency: "效率提升",
+        efficiencyDesc: "更快的分析周转",
+        monitoring: "实时监控",
+        monitoringDesc: "持续质量保证",
+        languages: "支持语言",
+        languagesDesc: "多语言分析"
+      },
+      qualityAnalysis: {
+        title: "智能数据质量分析",
+        description: "自动检测和标记可疑的回答模式，确保数据完整性和可靠性。",
+        benefit1: "实时欺诈检测和预防",
+        benefit2: "自动化回答模式分析",
+        benefit3: "每个受访者的质量评分"
+      },
+      trendAnalysis: {
+        title: "实时回答趋势",
+        description: "通过预测分析实时监控调研完成率和回答质量。",
+        benefit1: "在启动前预测完成率",
+        benefit2: "识别最佳调研时机",
+        benefit3: "跟踪回答质量趋势"
+      },
+      audienceMatching: {
+        title: "AI驱动受众匹配",
+        description: "基于人口统计、行为和上下文因素的智能受访者选择。",
+        benefit1: "95%+精度的精准定位",
+        benefit2: "行为模式识别",
+        benefit3: "动态配额优化"
+      },
+      sentimentAnalysis: {
+        title: "多语言情感分析",
+        description: "分析多种语言和文化中的情感回答和情感倾向。",
+        benefit1: "跨文化情感洞察",
+        benefit2: "情感回答跟踪",
+        benefit3: "文化背景理解"
+      },
+      predictiveInsights: {
+        title: "预测性市场洞察",
+        description: "利用历史数据预测市场趋势和消费者行为模式。",
+        benefit1: "市场趋势预测",
+        benefit2: "消费者行为预测",
+        benefit3: "风险评估和缓解"
+      },
+      quotaManagement: {
+        title: "智能配额管理",
+        description: "自动平衡不同人口统计段的样本分布。",
+        benefit1: "实时配额监控",
+        benefit2: "自动样本重新平衡",
+        benefit3: "人口统计代表性优化"
+      },
+      cta: {
+        title: "准备体验AI驱动的调研分析？",
+        description: "加入已经利用我们AI能力更快获得深度洞察的领先研究团队。",
+        demoButton: "申请演示",
+        contactButton: "联系销售"
+      }
+    }
+  },
+  fr: {
+    nav: {
+      home: "Accueil",
+      solutions: "Solutions",
+      whyUs: "Pourquoi Nous",
+      aiAnalysis: "Analyse IA",
+      contact: "Contact",
+      resources: "Ressources",
+      joinPanel: "Rejoindre notre Panel",
+      signIn: "Se connecter",
+      panelBook: "Livre du Panel",
+      esomar37: "ESOMAR 37"
+    },
+    hero: {
+      title: "Panel d'Enquêtes Global de Haute Qualité",
+      subtitle: "Développez vos études de marché avec des répondants diversifiés et vérifiés et des opérations d'enquête transparentes.",
+      description: "Nous fournissons une distribution d'enquêtes rapide, fiable et conforme dans le monde entier.",
+      dashboard: {
+        online: "En ligne",
+        activeSurveys: "Enquêtes Actives",
+        availableRespondents: "Répondants Disponibles",
+        responseRate: "Taux de Réponse",
+        globalCoverage: "Couverture Mondiale",
+        countries: "Pays",
+        languages: "Langues",
+        industries: "Secteurs",
+        fraudDetection: "Détection de Fraude",
+        memberSatisfaction: "Satisfaction des Membres",
+        comingSoon: "Prochainement",
+        aiAnalysis: "Analyse IA",
+        aiDescription: "Transformez vos données d'enquête en insights exploitables avec nos outils d'analyse IA avancés conçus spécifiquement pour les études de marché.",
+        createSurvey: "Créer Enquête",
+        reports: "Rapports",
+        connected: "Connecté",
+        learnMore: "En savoir plus"
+      }
+    },
+    features: {
+      title: "Pourquoi Nous Faire Confiance",
+      badge: "Approuvé par 100+ Entreprises",
+      accuracyRate: "Taux de Précision",
+      activeRespondents: "Répondants Actifs",
+      countriesCovered: "Pays Couverts",
+      features: [
+        {
+          icon: "lightning",
+          title: "Réponse Rapide",
+          description: "Obtenez des répondants qualifiés en heures, pas en jours. Notre système de correspondance alimenté par l'IA garantit des temps de réponse rapides."
+        },
+        {
+          icon: "shield",
+          title: "Qualité Assurée",
+          description: "Contrôle qualité rigoureux avec vérification double opt-in et détection de fraude garantit des données fiables."
+        },
+        {
+          icon: "target",
+          title: "Couverture Ciblée",
+          description: "Ciblage précis démographique, professionnel et comportemental pour vos besoins d'enquête spécifiques."
+        },
+        {
+          icon: "globe",
+          title: "Couverture des Pays",
+          description: "Portée mondiale dans plus de 30 pays avec des pools de répondants localisés et support multilingue."
+        }
+      ]
+    },
+    solutions: {
+      title: "Solutions Spécifiques à l'Industrie",
+      subtitle: "Solutions de recherche sur mesure pour 20+ industries avec des pools de répondants spécialisés",
+      completeCoverage: "Couverture Complète de l'Industrie",
+      servingIndustries: "Servir 20+ industries avec des pools de répondants spécialisés"
+    },
+    trustQuality: {
+      title: "Confiance et Qualité",
+      subtitle: "Précis, rapide et rentable. Nos membres du panel sont satisfaits et motivés, offrant une excellente qualité de réponse.",
+      ourValues: "Nos Valeurs",
+      features: [
+        {
+          icon: "check",
+          title: "Vérification Double Opt-in",
+          description: "Tous les membres sont vérifiés par processus double opt-in, garantissant des répondants authentiques et engagés.",
+          highlight: "60% recommandations"
+        },
+        {
+          icon: "users",
+          title: "Membres Hautement Profilés",
+          description: "Profilage détaillé démographique, professionnel et comportemental pour un ciblage précis.",
+          highlight: "0.3% taux de fraude"
+        },
+        {
+          icon: "clock",
+          title: "Support en Direct",
+          description: "Équipe de support 24h/24 pour assurer l'exécution fluide des projets et la satisfaction des membres.",
+          highlight: "24/7 en ligne"
+        },
+        {
+          icon: "heart",
+          title: "Satisfaction des Membres",
+          description: "Des membres heureux et engagés fournissent des réponses de meilleure qualité et des taux de completion plus élevés.",
+          highlight: "98% satisfaction"
+        }
+      ],
+      values: [
+        {
+          title: "Valeur pour les Clients",
+          description: "Fournir des insights de recherche exceptionnels qui stimulent les décisions commerciales avec un taux de précision de 95% et des recommandations actionnables"
+        },
+        {
+          title: "Récompense Équitable aux Membres",
+          description: "S'assurer que nos membres du panel sont équitablement compensés avec des tarifs compétitifs et des systèmes de paiement transparents"
+        },
+        {
+          title: "Employés Heureux",
+          description: "Construire une équipe passionnée par la recherche et le succès client avec des opportunités d'apprentissage et de croissance continues"
+        }
+      ]
+    },
+    contact: {
+      title: "Prêt à Commencer ?",
+      subtitle: "Rejoignez des milliers d'équipes de recherche qui font confiance à LoopX pour leurs besoins d'échantillons.",
+      placeholder: "Entrez votre adresse e-mail",
+      buttonText: "Commencer",
+      submitting: "Soumission...",
+      thankYou: "Merci !",
+      receivedMessage: "Nous avons reçu votre demande et vous contacterons bientôt.",
+      submitAnother: "Soumettre une Autre Demande"
+    },
+    footer: {
+      description: "Distribution d'échantillons pilotée par l'IA pour les équipes de recherche modernes.",
+      copyright: "© 2025 LoopX. Tous droits réservés."
+    },
+    aiAnalysis: {
+      badge: "Insights Pilotés par l'IA",
+      title: "Analyse d'Enquêtes Intelligente",
+      subtitle: "Transformez vos données d'enquête en insights exploitables avec nos outils d'analyse IA avancés conçus spécifiquement pour les études de marché.",
+      stats: {
+        accuracy: "Taux de Précision",
+        accuracyDesc: "Détection de qualité pilotée par l'IA",
+        efficiency: "Gain d'Efficacité",
+        efficiencyDesc: "Analyse plus rapide",
+        monitoring: "Surveillance en Temps Réel",
+        monitoringDesc: "Assurance qualité continue",
+        languages: "Langues Supportées",
+        languagesDesc: "Analyse multilingue"
+      },
+      qualityAnalysis: {
+        title: "Analyse Intelligente de la Qualité des Données",
+        description: "Détectez et signalez automatiquement les modèles de réponse suspects, garantissant l'intégrité et la fiabilité des données.",
+        benefit1: "Détection et prévention de fraude en temps réel",
+        benefit2: "Analyse automatisée des modèles de réponse",
+        benefit3: "Score de qualité pour chaque répondant"
+      },
+      trendAnalysis: {
+        title: "Tendances de Réponse en Temps Réel",
+        description: "Surveillez les taux de completion d'enquête et la qualité de réponse en temps réel avec l'analyse prédictive.",
+        benefit1: "Prédire les taux de completion avant le lancement",
+        benefit2: "Identifier le timing optimal d'enquête",
+        benefit3: "Suivre les tendances de qualité de réponse"
+      },
+      audienceMatching: {
+        title: "Correspondance d'Audience Pilotée par l'IA",
+        description: "Sélection intelligente de répondants basée sur des facteurs démographiques, comportementaux et contextuels.",
+        benefit1: "Ciblage de précision avec 95%+ d'exactitude",
+        benefit2: "Reconnaissance de modèles comportementaux",
+        benefit3: "Optimisation dynamique des quotas"
+      },
+      sentimentAnalysis: {
+        title: "Analyse de Sentiment Multilingue",
+        description: "Analysez les réponses émotionnelles et les sentiments à travers plusieurs langues et cultures.",
+        benefit1: "Insights de sentiment interculturels",
+        benefit2: "Suivi des réponses émotionnelles",
+        benefit3: "Compréhension du contexte culturel"
+      },
+      predictiveInsights: {
+        title: "Insights Prédictifs du Marché",
+        description: "Exploitez les données historiques pour prédire les tendances du marché et les modèles de comportement des consommateurs.",
+        benefit1: "Prévision des tendances du marché",
+        benefit2: "Prédiction du comportement des consommateurs",
+        benefit3: "Évaluation et atténuation des risques"
+      },
+      quotaManagement: {
+        title: "Gestion Intelligente des Quotas",
+        description: "Équilibrez automatiquement la distribution d'échantillons à travers différents segments démographiques.",
+        benefit1: "Surveillance des quotas en temps réel",
+        benefit2: "Rééquilibrage automatique des échantillons",
+        benefit3: "Optimisation de la représentation démographique"
+      },
+      cta: {
+        title: "Prêt à Expérimenter l'Analyse d'Enquêtes Pilotée par l'IA ?",
+        description: "Rejoignez les équipes de recherche leaders qui exploitent déjà nos capacités IA pour obtenir des insights plus profonds plus rapidement.",
+        demoButton: "Demander une Démo",
+        contactButton: "Contacter les Ventes"
+      }
+    }
+  },
+  de: {
+    nav: {
+      home: "Startseite",
+      solutions: "Lösungen",
+      whyUs: "Warum Wir",
+      aiAnalysis: "KI-Analyse",
+      contact: "Kontakt",
+      resources: "Ressourcen",
+      joinPanel: "Unserem Panel beitreten",
+      signIn: "Anmelden",
+      panelBook: "Panel Buch",
+      esomar37: "ESOMAR 37"
+    },
+    hero: {
+      title: "Hochwertiges Globales Umfrage-Panel",
+      subtitle: "Skalieren Sie Ihre Marktforschung mit vielfältigen, verifizierten Befragten und nahtlosen Umfrageoperationen.",
+      description: "Wir liefern schnelle, zuverlässige und konforme Umfrageverteilung weltweit.",
+      dashboard: {
+        online: "Online",
+        activeSurveys: "Aktive Umfragen",
+        availableRespondents: "Verfügbare Befragte",
+        responseRate: "Antwortrate",
+        globalCoverage: "Globale Abdeckung",
+        countries: "Länder",
+        languages: "Sprachen",
+        industries: "Branchen",
+        fraudDetection: "Betrugserkennung",
+        memberSatisfaction: "Mitgliedszufriedenheit",
+        comingSoon: "Bald verfügbar",
+        aiAnalysis: "KI-Analyse",
+        aiDescription: "Transformieren Sie Ihre Umfragedaten in umsetzbare Erkenntnisse mit unseren fortschrittlichen KI-Analysetools, die speziell für Marktforschung entwickelt wurden.",
+        createSurvey: "Umfrage erstellen",
+        reports: "Berichte",
+        connected: "Verbunden",
+        learnMore: "Mehr erfahren"
+      }
+    },
+    features: {
+      title: "Warum uns Vertrauen",
+      badge: "Vertraut von 100+ Unternehmen",
+      accuracyRate: "Genauigkeitsrate",
+      activeRespondents: "Aktive Befragte",
+      countriesCovered: "Abgedeckte Länder",
+      features: [
+        {
+          icon: "lightning",
+          title: "Schnelle Antwort",
+          description: "Erhalten Sie qualifizierte Befragte in Stunden, nicht in Tagen. Unser KI-gestütztes Matching-System gewährleistet schnelle Antwortzeiten."
+        },
+        {
+          icon: "shield",
+          title: "Qualität Garantiert",
+          description: "Rigorose Qualitätskontrolle mit Double-Opt-in-Verifizierung und Betrugserkennung gewährleistet zuverlässige Daten."
+        },
+        {
+          icon: "target",
+          title: "Zielgruppenabdeckung",
+          description: "Präzises demografisches, berufliches und verhaltensbezogenes Targeting für Ihre spezifischen Umfrageanforderungen."
+        },
+        {
+          icon: "globe",
+          title: "Länderabdeckung",
+          description: "Globale Reichweite in über 30 Ländern mit lokalen Befragtenpools und mehrsprachiger Unterstützung."
+        }
+      ]
+    },
+    solutions: {
+      title: "Branchenspezifische Lösungen",
+      subtitle: "Maßgeschneiderte Forschungs Lösungen für 20+ Branchen mit spezialisierten Befragtenpools",
+      completeCoverage: "Vollständige Branchenabdeckung",
+      servingIndustries: "Bedienung von 20+ Branchen mit spezialisierten Befragtenpools"
+    },
+    trustQuality: {
+      title: "Vertrauen und Qualität",
+      subtitle: "Präzise, schnell und kostengünstig. Unsere Panel-Mitglieder sind zufrieden und motiviert und liefern ausgezeichnete Antwortqualität.",
+      ourValues: "Unsere Werte",
+      features: [
+        {
+          icon: "check",
+          title: "Doppelte Opt-in-Verifizierung",
+          description: "Alle Mitglieder werden durch einen doppelten Opt-in-Prozess verifiziert, um echte und engagierte Befragte zu gewährleisten.",
+          highlight: "60% Empfehlungen"
+        },
+        {
+          icon: "users",
+          title: "Hochprofiliert Mitglieder",
+          description: "Detaillierte demografische, berufliche und verhaltensbezogene Profilierung für präzises Targeting.",
+          highlight: "0.3% Betrugsrate"
+        },
+        {
+          icon: "clock",
+          title: "Live-Support",
+          description: "Rund-um-die-Uhr-Supportteam für reibungslose Projektdurchführung und Mitgliederzufriedenheit.",
+          highlight: "24/7 online"
+        },
+        {
+          icon: "heart",
+          title: "Mitgliederzufriedenheit",
+          description: "Glückliche und engagierte Mitglieder liefern bessere Antwortqualität und höhere Abschlussraten.",
+          highlight: "98% Zufriedenheit"
+        }
+      ],
+      values: [
+        {
+          title: "Wert für Kunden",
+          description: "Außergewöhnliche Forschungserkenntnisse liefern, die Geschäftsentscheidungen mit 95% Genauigkeitsrate und umsetzbaren Empfehlungen vorantreiben"
+        },
+        {
+          title: "Faire Belohnung für Mitglieder",
+          description: "Sicherstellen, dass unsere Panel-Mitglieder mit wettbewerbsfähigen Tarifen und transparenten Zahlungssystemen fair entschädigt werden"
+        },
+        {
+          title: "Glückliche Mitarbeiter",
+          description: "Ein Team aufbauen, das leidenschaftlich an Forschung und Kundenerfolg mit kontinuierlichem Lernen und Wachstumsmöglichkeiten arbeitet"
+        }
+      ]
+    },
+    contact: {
+      title: "Bereit zu Starten?",
+      subtitle: "Schließen Sie sich Tausenden von Forschungsteams an, die LoopX für ihre Stichprobenanforderungen vertrauen.",
+      placeholder: "Geben Sie Ihre E-Mail-Adresse ein",
+      buttonText: "Loslegen",
+      submitting: "Wird übermittelt...",
+      thankYou: "Vielen Dank!",
+      receivedMessage: "Wir haben Ihre Anfrage erhalten und werden uns bald bei Ihnen melden.",
+      submitAnother: "Weitere Anfrage übermitteln"
+    },
+    footer: {
+      description: "KI-gesteuerte Stichprobenverteilung für moderne Forschungsteams.",
+      copyright: "© 2025 LoopX. Alle Rechte vorbehalten."
+    },
+    aiAnalysis: {
+      badge: "KI-gestützte Einblicke",
+      title: "Intelligente Umfrageanalyse",
+      subtitle: "Transformieren Sie Ihre Umfragedaten in umsetzbare Erkenntnisse mit unseren fortschrittlichen KI-Analysetools, die speziell für Marktforschung entwickelt wurden.",
+      stats: {
+        accuracy: "Genauigkeitsrate",
+        accuracyDesc: "KI-gestützte Qualitätserkennung",
+        efficiency: "Effizienzgewinn",
+        efficiencyDesc: "Schnellere Analyse",
+        monitoring: "Echtzeit-Überwachung",
+        monitoringDesc: "Kontinuierliche Qualitätssicherung",
+        languages: "Unterstützte Sprachen",
+        languagesDesc: "Mehrsprachige Analyse"
+      },
+      qualityAnalysis: {
+        title: "Intelligente Datenqualitätsanalyse",
+        description: "Erkennen und markieren Sie automatisch verdächtige Antwortmuster und gewährleisten Sie Datenintegrität und -zuverlässigkeit.",
+        benefit1: "Echtzeit-Betrugserkennung und -prävention",
+        benefit2: "Automatisierte Antwortmusteranalyse",
+        benefit3: "Qualitätsbewertung für jeden Befragten"
+      },
+      trendAnalysis: {
+        title: "Echtzeit-Antworttrends",
+        description: "Überwachen Sie Umfragevollständigkeitsraten und Antwortqualität in Echtzeit mit prädiktiver Analytik.",
+        benefit1: "Vollständigkeitsraten vor dem Start vorhersagen",
+        benefit2: "Optimalen Umfragezeitpunkt identifizieren",
+        benefit3: "Antwortqualitätstrends verfolgen"
+      },
+      audienceMatching: {
+        title: "KI-gestütztes Publikums-Matching",
+        description: "Intelligente Befragtenauswahl basierend auf demografischen, verhaltensbezogenen und kontextuellen Faktoren.",
+        benefit1: "Präzises Targeting mit 95%+ Genauigkeit",
+        benefit2: "Verhaltensmustererkennung",
+        benefit3: "Dynamische Quotenoptimierung"
+      },
+      sentimentAnalysis: {
+        title: "Mehrsprachige Sentiment-Analyse",
+        description: "Analysieren Sie emotionale Antworten und Stimmungen in mehreren Sprachen und Kulturen.",
+        benefit1: "Interkulturelle Sentiment-Einblicke",
+        benefit2: "Emotionale Antwortverfolgung",
+        benefit3: "Kulturelles Kontextverständnis"
+      },
+      predictiveInsights: {
+        title: "Prädiktive Markteinblicke",
+        description: "Nutzen Sie historische Daten, um Markttrends und Verbraucherverhaltensmuster vorherzusagen.",
+        benefit1: "Markttrend-Prognose",
+        benefit2: "Verbraucherverhaltensvorhersage",
+        benefit3: "Risikobewertung und -minderung"
+      },
+      quotaManagement: {
+        title: "Intelligentes Quotenmanagement",
+        description: "Balancieren Sie automatiquement die Stichprobenverteilung über verschiedene demografische Segmente.",
+        benefit1: "Echtzeit-Quotenüberwachung",
+        benefit2: "Automatische Stichproben-Neubalancierung",
+        benefit3: "Demografische Repräsentationsoptimierung"
+      },
+      cta: {
+        title: "Bereit für KI-gestützte Umfrageanalyse?",
+        description: "Schließen Sie sich führenden Forschungsteams an, die bereits unsere KI-Fähigkeiten nutzen, um schnellere, tiefere Einblicke zu gewinnen.",
+        demoButton: "Demo Anfordern",
+        contactButton: "Vertrieb Kontaktieren"
+      }
+    }
+  },
+  ko: {
+    nav: {
+      home: "홈",
+      solutions: "솔루션",
+      whyUs: "왜 우리인가",
+      aiAnalysis: "AI 분석",
+      contact: "연락처",
+      resources: "리소스",
+      joinPanel: "패널 참여하기",
+      signIn: "로그인",
+      panelBook: "패널 북",
+      esomar37: "ESOMAR 37"
+    },
+    hero: {
+      title: "고품질 글로벌 설문조사 패널",
+      subtitle: "다양하고 검증된 응답자와 원활한 설문조사 운영으로 시장조사를 확장하세요.",
+      description: "저희는 전 세계적으로 빠르고 신뢰할 수 있으며 규정을 준수하는 설문조사 배포를 제공합니다.",
+      dashboard: {
+        online: "온라인",
+        activeSurveys: "활성 설문조사",
+        availableRespondents: "사용 가능한 응답자",
+        responseRate: "응답률",
+        globalCoverage: "전 세계 커버리지",
+        countries: "국가",
+        languages: "언어",
+        industries: "산업",
+        fraudDetection: "사기 탐지",
+        memberSatisfaction: "멤버 만족도",
+        comingSoon: "출시 예정",
+        aiAnalysis: "AI 분석",
+        aiDescription: "시장조사를 위해 특별히 설계된 고급 AI 분석 도구로 설문조사 데이터를 실행 가능한 인사이트로 변환하세요.",
+        createSurvey: "설문 생성",
+        reports: "보고서",
+        connected: "연결됨",
+        learnMore: "더 알아보기"
+      }
+    },
+    features: {
+      title: "왜 저희를 신뢰해야 할까요",
+      badge: "100+ 기업이 신뢰",
+      accuracyRate: "정확도",
+      activeRespondents: "활성 응답자",
+      countriesCovered: "포함된 국가",
+      features: [
+        {
+          icon: "lightning",
+          title: "빠른 응답",
+          description: "며칠이 아닌 몇 시간 내에 자격을 갖춘 응답자를 확보하세요. AI 기반 매칭 시스템이 빠른 응답 시간을 보장합니다."
+        },
+        {
+          icon: "shield",
+          title: "품질 보장",
+          description: "이중 확인 검증과 사기 탐지가 포함된 엄격한 품질 관리로 신뢰할 수 있는 데이터를 보장합니다."
+        },
+        {
+          icon: "target",
+          title: "타겟 커버리지",
+          description: "특정 설문조사 요구사항에 대한 정확한 인구통계학적, 전문적 및 행동적 타겟팅."
+        },
+        {
+          icon: "globe",
+          title: "국가 커버리지",
+          description: "30개 이상의 국가에서 현지화된 응답자 풀과 다국어 지원을 통한 글로벌 도달."
+        }
+      ]
+    },
+    solutions: {
+      title: "산업별 맞춤 솔루션",
+      subtitle: "전문 응답자 풀을 갖춘 20개 이상의 산업을 위한 맞춤형 연구 솔루션",
+      completeCoverage: "완전한 산업 커버리지",
+      servingIndustries: "전문 응답자 풀로 20개 이상의 산업 서비스"
+    },
+    trustQuality: {
+      title: "신뢰와 품질",
+      subtitle: "정확하고 빠르며 비용 효율적입니다. 저희 패널 멤버들은 만족하고 동기부여되어 있으며 우수한 응답 품질을 제공합니다.",
+      ourValues: "저희 가치",
+      features: [
+        {
+          icon: "check",
+          title: "이중 옵트인 검증",
+          description: "모든 멤버는 이중 옵트인 프로세스를 통해 검증되어 진정성 있고 참여적인 응답자를 보장합니다.",
+          highlight: "60% 추천"
+        },
+        {
+          icon: "users",
+          title: "고도로 프로파일링된 멤버",
+          description: "정확한 타겟팅을 위한 상세한 인구통계학적, 전문적, 행동적 프로파일링.",
+          highlight: "0.3% 사기율"
+        },
+        {
+          icon: "clock",
+          title: "실시간 지원",
+          description: "원활한 프로젝트 실행과 멤버 만족을 위한 24시간 지원팀.",
+          highlight: "24/7 온라인"
+        },
+        {
+          icon: "heart",
+          title: "멤버 만족도",
+          description: "행복하고 참여적인 멤버들이 더 나은 품질의 응답과 높은 완료율을 제공합니다.",
+          highlight: "98% 만족도"
+        }
+      ],
+      values: [
+        {
+          title: "고객에게 가치 제공",
+          description: "95% 정확도와 실행 가능한 권장사항으로 비즈니스 결정을 주도하는 탁월한 연구 인사이트 제공"
+        },
+        {
+          title: "멤버에게 공정한 보상",
+          description: "경쟁력 있는 요금과 투명한 결제 시스템으로 패널 멤버들이 공정하게 보상받도록 보장"
+        },
+        {
+          title: "행복한 직원",
+          description: "지속적인 학습과 성장 기회를 통해 연구와 고객 성공에 열정을 가진 팀 구축"
+        }
+      ]
+    },
+    contact: {
+      title: "시작할 준비가 되셨나요?",
+      subtitle: "샘플 요구사항에 LoopX를 신뢰하는 수천 개의 연구팀에 참여하세요.",
+      placeholder: "이메일 주소를 입력하세요",
+      buttonText: "시작하기",
+      submitting: "제출 중...",
+      thankYou: "감사합니다!",
+      receivedMessage: "요청을 받았으며 곧 연락드리겠습니다.",
+      submitAnother: "다른 요청 제출"
+    },
+    footer: {
+      description: "현대적인 연구팀을 위한 AI 기반 샘플 배포.",
+      copyright: "© 2025 LoopX. 모든 권리 보유."
+    },
+    aiAnalysis: {
+      badge: "AI 기반 인사이트",
+      title: "지능형 설문조사 분석",
+      subtitle: "시장조사를 위해 특별히 설계된 고급 AI 분석 도구로 설문조사 데이터를 실행 가능한 인사이트로 변환하세요.",
+      stats: {
+        accuracy: "정확도",
+        accuracyDesc: "AI 기반 품질 감지",
+        efficiency: "효율성 향상",
+        efficiencyDesc: "더 빠른 분석",
+        monitoring: "실시간 모니터링",
+        monitoringDesc: "지속적인 품질 보증",
+        languages: "지원 언어",
+        languagesDesc: "다국어 분석"
+      },
+      qualityAnalysis: {
+        title: "스마트 데이터 품질 분석",
+        description: "의심스러운 응답 패턴을 자동으로 감지하고 표시하여 데이터 무결성과 신뢰성을 보장합니다.",
+        benefit1: "실시간 사기 감지 및 예방",
+        benefit2: "자동화된 응답 패턴 분석",
+        benefit3: "각 응답자에 대한 품질 점수"
+      },
+      trendAnalysis: {
+        title: "실시간 응답 트렌드",
+        description: "예측 분석을 통해 설문조사 완료율과 응답 품질을 실시간으로 모니터링합니다.",
+        benefit1: "출시 전 완료율 예측",
+        benefit2: "최적의 설문조사 타이밍 식별",
+        benefit3: "回答 품질 트렌드 추적"
+      },
+      audienceMatching: {
+        title: "AI 기반 대상자 매칭",
+        description: "인구통계학적, 행동적, 맥락적 요인을 기반으로 한 지능형 응답자 선택.",
+        benefit1: "95%+ 정확도의 정밀 타겟팅",
+        benefit2: "행동 패턴 인식",
+        benefit3: "동적 할당량 최적화"
+      },
+      sentimentAnalysis: {
+        title: "다국어 감정 분석",
+        description: "여러 언어와 문화에서 감정적 응답과 감정을 분석합니다.",
+        benefit1: "문화간 감정 인사이트",
+        benefit2: "감정적 응답 추적",
+        benefit3: "문화적 맥락 이해"
+      },
+      predictiveInsights: {
+        title: "예측적 시장 인사이트",
+        description: "역사적 데이터를 활용하여 시장 트렌드와 소비자 행동 패턴을 예측합니다.",
+        benefit1: "시장 트렌드 예측",
+        benefit2: "소비자 행동 예측",
+        benefit3: "위험 평가 및 완화"
+      },
+      quotaManagement: {
+        title: "지능형 할당량 관리",
+        description: "다양한 인구통계학적 세그먼트에서 샘플 분포를 자동으로 균형 조정합니다.",
+        benefit1: "실시간 할당량 모니터링",
+        benefit2: "자동 샘플 재균형",
+        benefit3: "인구통계학적 대표성 최적화"
+      },
+      cta: {
+        title: "AI 기반 설문조사 분석을 경험할 준비가 되셨나요?",
+        description: "이미 우리의 AI 기능을 활용하여 더 빠르고 깊은 인사이트를 얻고 있는 선도적인 연구팀에 합류하세요.",
+        demoButton: "데모 요청",
+        contactButton: "영업팀 문의"
+      }
+    }
+  },
+  ja: {
+    nav: {
+      home: "ホーム",
+      solutions: "ソリューション",
+      whyUs: "なぜ私たち",
+      aiAnalysis: "AI分析",
+      contact: "お問い合わせ",
+      resources: "リソース",
+      joinPanel: "パネルに参加",
+      signIn: "ログイン",
+      panelBook: "パネルブック",
+      esomar37: "ESOMAR 37"
+    },
+    hero: {
+      title: "高品質グローバル調査パネル",
+      subtitle: "多様で検証済みの回答者とシームレスな調査運用で市場調査を拡張しましょう。",
+      description: "私たちは世界中で迅速、信頼性が高く、コンプライアンスに準拠した調査配信を提供します。",
+      dashboard: {
+        online: "オンライン",
+        activeSurveys: "アクティブ調査",
+        availableRespondents: "利用可能回答者",
+        responseRate: "応答率",
+        globalCoverage: "グローバルカバレッジ",
+        countries: "国",
+        languages: "言語",
+        industries: "業界",
+        fraudDetection: "不正検出",
+        memberSatisfaction: "メンバー満足度",
+        comingSoon: "近日公開",
+        aiAnalysis: "AI分析",
+        aiDescription: "市場調査のために特別に設計された高度なAI分析ツールで、調査データを実行可能なインサイトに変換します。",
+        createSurvey: "調査作成",
+        reports: "レポート",
+        connected: "接続済み",
+        learnMore: "詳細を見る"
+      }
+    },
+    features: {
+      title: "なぜ私たちを信頼するのか",
+      badge: "100+企業が信頼",
+      accuracyRate: "精度",
+      activeRespondents: "アクティブ回答者",
+      countriesCovered: "対象国",
+      features: [
+        {
+          icon: "lightning",
+          title: "迅速な回答",
+          description: "数日ではなく数時間で適格な回答者を獲得。AI駆動のマッチングシステムが迅速な回答時間を保証します。"
+        },
+        {
+          icon: "shield",
+          title: "品質保証",
+          description: "ダブルオプトイン検証と不正検出を含む厳格な品質管理により、信頼性の高いデータを保証します。"
+        },
+        {
+          icon: "target",
+          title: "ターゲットカバレッジ",
+          description: "特定の調査ニーズに対する正確な人口統計学的、専門的、行動的ターゲティング。"
+        },
+        {
+          icon: "globe",
+          title: "国別カバレッジ",
+          description: "30カ国以上でローカライズされた回答者プールと多言語サポートによるグローバルリーチ。"
+        }
+      ]
+    },
+    solutions: {
+      title: "業界特化ソリューション",
+      subtitle: "専門回答者プールを備えた20以上の業界向けカスタマイズ調査ソリューション",
+      completeCoverage: "完全な業界カバレッジ",
+      servingIndustries: "専門回答者プールで20以上の業界にサービス提供"
+    },
+    trustQuality: {
+      title: "信頼と品質",
+      subtitle: "正確、迅速、コスト効率的。私たちのパネルメンバーは満足し、モチベーションが高く、優れた回答品質を提供します。",
+      ourValues: "私たちの価値",
+      features: [
+        {
+          icon: "check",
+          title: "二重オプトイン検証",
+          description: "すべてのメンバーは二重オプトインプロセスを通じて検証され、真の参加型回答者を保証します。",
+          highlight: "60%紹介"
+        },
+        {
+          icon: "users",
+          title: "高度にプロファイリングされたメンバー",
+          description: "正確なターゲティングのための詳細な人口統計学的、専門的、行動的プロファイリング。",
+          highlight: "0.3%不正率"
+        },
+        {
+          icon: "clock",
+          title: "ライブサポート",
+          description: "スムーズなプロジェクト実行とメンバー満足のための24時間サポートチーム。",
+          highlight: "24/7オンライン"
+        },
+        {
+          icon: "heart",
+          title: "メンバー満足度",
+          description: "幸せで参加的なメンバーがより良い品質の回答と高い完了率を提供します。",
+          highlight: "98%満足度"
+        }
+      ],
+      values: [
+        {
+          title: "顧客への価値提供",
+          description: "95%の精度と実行可能な推奨事項でビジネス決定を推進する卓越した研究洞察を提供"
+        },
+        {
+          title: "メンバーへの公平な報酬",
+          description: "競争力のある料金と透明な支払いシステムでパネルメンバーが公平に報酬を受け取ることを保証"
+        },
+        {
+          title: "幸せな従業員",
+          description: "継続的な学習と成長機会を通じて研究と顧客成功に情熱を持つチームを構築"
+        }
+      ]
+    },
+    contact: {
+      title: "始める準備はできましたか？",
+      subtitle: "サンプルニーズにLoopXを信頼する何千もの研究チームに参加してください。",
+      placeholder: "メールアドレスを入力してください",
+      buttonText: "始める",
+      submitting: "送信中...",
+      thankYou: "ありがとうございます！",
+      receivedMessage: "リクエストを受け取りました。近日中にご連絡いたします。",
+      submitAnother: "別のリクエストを送信"
+    },
+    footer: {
+      description: "現代の研究チーム向けAI駆動サンプル配信。",
+      copyright: "© 2025 LoopX. 全著作権所有。"
+    },
+    aiAnalysis: {
+      badge: "AI駆動インサイト",
+      title: "インテリジェント調査分析",
+      subtitle: "市場調査のために特別に設計された高度なAI分析ツールで、調査データを実行可能なインサイトに変換します。",
+      stats: {
+        accuracy: "精度",
+        accuracyDesc: "AI駆動品質検出",
+        efficiency: "効率性向上",
+        efficiencyDesc: "より高速な分析",
+        monitoring: "リアルタイム監視",
+        monitoringDesc: "継続的な品質保証",
+        languages: "対応言語",
+        languagesDesc: "多言語分析"
+      },
+      qualityAnalysis: {
+        title: "スマートデータ品質分析",
+        description: "疑わしい回答パターンを自動的に検出・フラグ付けし、データの整合性と信頼性を確保します。",
+        benefit1: "リアルタイム不正検出・防止",
+        benefit2: "自動化された回答パターン分析",
+        benefit3: "各回答者の品質スコア"
+      },
+      trendAnalysis: {
+        title: "リアルタイム回答トレンド",
+        description: "予測分析により調査完了率と回答品質をリアルタイムで監視します。",
+        benefit1: "開始前の完了率予測",
+        benefit2: "最適な調査タイミングの特定",
+        benefit3: "回答品質トレンドの追跡"
+      },
+      audienceMatching: {
+        title: "AI駆動オーディエンスマッチング",
+        description: "人口統計学的、行動的、文脈的要因に基づくインテリジェントな回答者選択。",
+        benefit1: "95%+精度の精密ターゲティング",
+        benefit2: "行動パターン認識",
+        benefit3: "動的クォータ最適化"
+      },
+      sentimentAnalysis: {
+        title: "多言語感情分析",
+        description: "複数の言語と文化における感情的応答と感情を分析します。",
+        benefit1: "異文化間感情インサイト",
+        benefit2: "感情的応答追跡",
+        benefit3: "文化的文脈理解"
+      },
+      predictiveInsights: {
+        title: "予測的市場インサイト",
+        description: "履歴データを活用して市場トレンドと消費者行動パターンを予測します。",
+        benefit1: "市場トレンド予測",
+        benefit2: "消費者行動予測",
+        benefit3: "リスク評価と軽減"
+      },
+      quotaManagement: {
+        title: "インテリジェントクォータ管理",
+        description: "異なる人口統計学的セグメント間でサンプル分布を自動的にバランス調整します。",
+        benefit1: "リアルタイムクォータ監視",
+        benefit2: "自動サンプル再バランス",
+        benefit3: "人口統計学的代表性最適化"
+      },
+      cta: {
+        title: "AI駆動調査分析を体験する準備はできていますか？",
+        description: "既に私たちのAI機能を活用してより迅速で深いインサイトを得ているリーディング研究チームに参加してください。",
+        demoButton: "デモリクエスト",
+        contactButton: "営業チームに連絡"
+      }
+    }
+  }
+};
+
+export const languages = [
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'zh', name: '中文', flag: '🇨🇳' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'ko', name: '한국어', flag: '🇰🇷' },
+  { code: 'ja', name: '日本語', flag: '��🇵' }
+] as const; 
